@@ -1,0 +1,14 @@
+libTcWeb is a collection of php scripts. 
+
+dbobject.inc.php : is a generic object to access mysql database
+
+table.inc.php : is a generic object to access on a single table
+
+to use this, you must create a db.ini file like this 
+---- db.ini ----
+login=user
+password=password
+host=localhost
+db=db name
+---- db.ini ----
+

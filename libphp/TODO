@@ -1,0 +1,3 @@
+- gérer les valeurs null (recherche / insert / update)
+- gérer les types dates pour une saisie plus "intuitive"
+- migrer vers PEAR:db

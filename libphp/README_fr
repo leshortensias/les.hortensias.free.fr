@@ -1,0 +1,54 @@
+libTcWeb est un ensemble de class php pour simplifier la création de site web.
+
+dbobject.inc.php : objet généric d'accès à une base de donnée mysql.
+
+table.inc.php : objet généric d'accès a une table.
+
+Pour utiliser ces script il faut créer un fichier db.ini comme celui-ci
+---- db.ini ----
+login=user
+password=password
+host=localhost
+db=db name
+---- db.ini ----
+
+Pour que les class marche bien il y a quelques règles à respecter :
+- une seule clef primaire par table
+- la clé primaire d'un table donné doit être nommé de la façon suivante :
+	id_<nom de la table au singulier>
+- une clé étrangère doit avoir le même nom que dans sa table d'origine :
+	id_<nom de la table au singulier>
+- aucun champs ne doit s'appeller action, sous, selected
+- les champs date_modif et date_creation sont systématiquement non saisissable
+
+
+De plus, les noms des champs transmit dans les formulaires doivent être de la forme : 
+<nom de la table>_<nom du champs>
+
+Pour utiliser htmlarea, les textarea ont un id formé comme ceci : "ta_<nom_du_champs>"
+Par exemple : 
+  <script type="text/javascript">
+    _editor_url = "htmlarea/";
+    _editor_lang = "fr";
+  </script>
+
+  <script type="text/javascript" src="htmlarea/htmlarea.js"></script>
+  <script type="text/javascript" src="htmlarea/lang/en.js"></script>
+  <script type="text/javascript" src="htmlarea/lang/fr.js"></script>
+
+  <script type="text/javascript">
+    var editor = null;
+    HTMLArea.loadPlugin("TableOperations");
+    function initEditor() {
+    editor = new HTMLArea("ta_nom_du_champs");
+    editor.registerPlugin(TableOperations);
+    editor.generate();
+    return false;
+  </script>
+  <style type="text/css">
+    @import url(htmlarea/htmlarea.css);
+  </style>
+
+Et dans la balise body : 
+  <body onload="HTMLArea.init(); HTMLArea.onload = initEditor">
+

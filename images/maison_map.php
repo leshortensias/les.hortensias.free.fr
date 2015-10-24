@@ -1,0 +1,20 @@
+<IMG SRC="<?php echo $relPath ?>/images/maison.png" WIDTH=800 HEIGHT=557 BORDER=0 USEMAP="#map" name=maison>
+
+<MAP NAME="map">
+<!-- #$-:Image Map file created by GIMP Imagemap Plugin -->
+<!-- #$-:GIMP Imagemap Plugin by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:1.3 -->
+<!-- #$AUTHOR:Thomas Clavier -->
+<AREA SHAPE="POLY" COORDS="617,205,619,122,619,119,740,119,738,206" ALT="Chambre Jean-Michel Charpentier" HREF="./chambres/charpentier.php">
+<AREA SHAPE="POLY" COORDS="266,95,264,162,328,161,397,158,484,159,530,159,532,94,528,92,465,91,394,91,338,94,297,94,267,95" ALT="Informations" HREF="<?php echo $relPath ?>/goeland/info.php">
+<AREA SHAPE="POLY" COORDS="9,24,59,23,66,25,69,27,71,32,110,24,116,23,123,24,126,28,125,34,117,53,119,54,120,55,120,57,131,57,136,58,139,61,139,66,138,72,134,76,129,76,113,77,110,79,106,80,100,89,90,97,77,103,72,104,67,109,61,112,54,128,35,124,29,127,10,106,35,104,35,101,26,94,20,87,16,80,15,68,47,70,47,63,38,62,29,60,22,52,6,27,9,24" ALT="R&eacute;servation" HREF="<?php echo $relPath ?>/goeland/">
+<AREA SHAPE="POLY" COORDS="603,233,728,232,726,318,602,318,601,317" ALT="Chambre Pierre-Marie Clavier" HREF="<?php echo $relPath ?>/chambres/clavier.php">
+<AREA SHAPE="POLY" COORDS="610,347,736,347,735,426,606,426,611,389" ALT="Chambres Paul Guimezanes" HREF="<?php echo $relPath ?>/chambres/guimezanes.php">
+<AREA SHAPE="POLY" COORDS="597,473,647,444,723,439,752,445,770,465,770,472,767,485,782,507,785,528,788,556,598,551" ALT="Tourisme" HREF="<?php echo $relPath ?>/velo/">
+<AREA SHAPE="POLY" COORDS="158,428,247,426,244,531,208,531,207,549,183,548,184,532,155,532" ALT="Les nouvelles du site" HREF="<?php echo $relPath ?>/news.php">
+<AREA SHAPE="POLY" COORDS="77,428,83,391,84,368,85,340,201,336,199,425,140,427,82,431,82,430,81,430" ALT="Salle Alain Bellanger" HREF="<?php echo $relPath ?>/chambres/bellanger.php">
+<AREA SHAPE="POLY" COORDS="64,227,193,228,186,316,63,316" ALT="Chambre Alain Crozon" HREF="<?php echo $relPath ?>/chambres/crozon.php">
+<AREA SHAPE="POLY" COORDS="83,110,198,105,202,204,83,204" ALT="Chambre Xavier Delerue" HREF="<?php echo $relPath ?>/chambres/delerue.php">
+<AREA SHAPE="POLY" COORDS="536,0,527,19,513,58,526,89,533,93,532,158,565,160,612,156,619,120,708,117,728,103,721,50,722,12,695,0" ALT="M&eacute;t&eacute;o" HREF="<?php echo $relPath ?>/nuage/">
+</MAP>

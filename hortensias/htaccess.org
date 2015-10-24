@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+	# activate rewrite engine
+	RewriteEngine on
+
+	# rules
+	RewriteCond %{REQUEST_FILENAME} !-F
+	RewriteRule ^pages/(.*)$  /index.php?page=$1&rule=$2 [QSA]
+</IfModule>
+
